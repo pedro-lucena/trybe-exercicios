@@ -35,14 +35,21 @@ let order = {
   };
   
   function customerInfo(order) {
-    return: 'Olá, ' + order.delivery.deliveryPerson
-    // Adicione abaixo as informações necessárias.
+    let deliveryPerson = order.order.delivery.deliveryPerson;
+    let customerName = order.name;
+    let customerPhone = order.phoneNumber;
+    let street = order.address.street;
+    let number = order.address.number;
+    let apartment = order.address.apartment;
+  
+    console.log('Olá ' + deliveryPerson + ', entrega para: ' + customerName + ', Telefone: ' + ' R. ' + street + ', Nº: ' + 'AP: ' + apartment)
   }
   
   customerInfo(order);
   
   function orderModifier(order) {
-    // Adicione abaixo as informações necessárias.
+    
   }
+
+
   
-  orderModifier(order);
